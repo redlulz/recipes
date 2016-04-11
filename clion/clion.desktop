@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=CLion
+Icon=clion
+GenericName=C and C++ IDE
+Comment=A smart cross-platform IDE for C and C++
+Exec=/usr/bin/clion
+Terminal=false
+Type=Application
+Categories=Development;IDE;
+StartupNotify=true
+StartupWMClass=jetbrains-clion
