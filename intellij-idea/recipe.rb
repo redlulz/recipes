@@ -2,13 +2,13 @@ class Idea < FPM::Cookery::Recipe
   description   'The most intelligent Java IDE'
 
   name          'intellij-idea-ultimate'
-  version       '2016.1'
-  revision      0
+  version       '2016.1.2'
+  revision      1
   section       'devel'
   vendor        'JetBrains'
   homepage      'https://www.jetbrains.com/idea/'
   source        "https://download.jetbrains.com/idea/ideaIU-#{version}.tar.gz"
-  sha256        'eb0fef2d110d99ccff34883e3b0ebd32a4c6503af3af13711c9187307cc3cb97'
+  sha256        'fe51f5e0cd9dde166ff5ff7194221c760e3e5a12e0e3423b7ebb10d42de9b737'
 
   depends       'default-jdk'
 
