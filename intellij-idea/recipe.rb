@@ -2,13 +2,13 @@ class Idea < FPM::Cookery::Recipe
   description   'The most intelligent Java IDE'
 
   name          'intellij-idea-ultimate'
-  version       '2016.2'
+  version       '2016.2.5'
   revision      1
   section       'devel'
   vendor        'JetBrains'
   homepage      'https://www.jetbrains.com/idea/'
   source        "https://download.jetbrains.com/idea/ideaIU-#{version}.tar.gz"
-  sha256        '647ea2b7c1954012ca2e1e027b59ad7fa6cf24dee2dcc22c135155c60cc41182'
+  sha256        '30a4ddf82b8393fc22803c9335d6cb00087116dd09915e44f40f0433b81b1b3d'
 
   depends       'default-jdk'
 
@@ -26,7 +26,8 @@ class Idea < FPM::Cookery::Recipe
   end
 
   def install
-    opt("#{name}").install Dir['bin', 'help', 'lib', 'license', 'plugins', 'redist', 'build.txt', 'Install-Linux-tar.txt']
+    opt("#{name}").install Dir['*']
+    opt("#{name}/jre").rmtree
 
     share('applications').install workdir('intellij-idea-ultimate.desktop')
 
