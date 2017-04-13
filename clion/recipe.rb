@@ -2,13 +2,13 @@ class CLion < FPM::Cookery::Recipe
   description   'A cross-platform IDE for C and C++'
 
   name          'clion'
-  version       '2016.3.3'
+  version       '2017.1.1'
   revision      1
   section       'devel'
   vendor        'JetBrains'
   homepage      'https://www.jetbrains.com/clion/'
   source        "https://download.jetbrains.com/cpp/CLion-#{version}.tar.gz"
-  sha256        '057c7b5bf464aee51d9f8d01f8c89ed7334e52e378204cddf28e86e2c1f3f1ff'
+  sha256        '9abd6bd38801ae6cf29db2cd133c700e8da11841093de872312fe33ed51309ae'
 
   depends       'default-jre'
 

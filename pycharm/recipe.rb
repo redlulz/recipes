@@ -2,13 +2,13 @@ class PyCharm < FPM::Cookery::Recipe
   description   'Python IDE for Professional Developers'
 
   name          'pycharm-professional'
-  version       '2017.1'
+  version       '2017.1.1'
   revision      1
   section       'devel'
   vendor        'JetBrains'
   homepage      'https://www.jetbrains.com/pycharm/'
   source        "https://download.jetbrains.com/python/#{name}-#{version}.tar.gz"
-  sha256        '6e5223fa4b50e459ad6b03d33b6184ec59791aedd97048f50588602ded6071e7'
+  sha256        '422fc9d7ff08477648e1d82792c2542d4e4bc293d645b5849d9d7665f8338bdd'
 
   depends       'default-jre', 'python | python3'
 
@@ -27,7 +27,7 @@ class PyCharm < FPM::Cookery::Recipe
 
   def install
     opt("#{name}").install Dir['*']
-    opt("#{name}/jre").rmtree
+    opt("#{name}/jre64").rmtree
 
     share('applications').install workdir('pycharm-professional.desktop')
 
