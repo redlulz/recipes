@@ -16,7 +16,7 @@ class Gogland < FPM::Cookery::Recipe
   config_files  %W(
     /opt/#{name}/bin/idea.properties
     /opt/#{name}/bin/gogland.vmoptions
-    /opt/#{name}/bin/gogland.vmoptions
+    /opt/#{name}/bin/gogland64.vmoptions
   )
 
   def build
