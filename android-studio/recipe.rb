@@ -16,7 +16,7 @@ class Studio < FPM::Cookery::Recipe
   config_files  %W(
     /opt/#{name}/bin/idea.properties
     /opt/#{name}/bin/studio.vmoptions
-    /opt/#{name}/bin/studio.vmoptions
+    /opt/#{name}/bin/studio64.vmoptions
   )
 
   def build
