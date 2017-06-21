@@ -2,8 +2,8 @@ class Rider < FPM::Cookery::Recipe
   description   'A cross-platform .NET IDE based on the IntelliJ platform and ReSharper'
 
   name          'rider'
-  buildid =     '171.4456.199'
-  version       "1.0-EAP-22-#{buildid}"
+  buildid =     '171.4456.575'
+  version       "2017.1-EAP-23-#{buildid}"
   revision      1
   section       'devel'
   vendor        'JetBrains'

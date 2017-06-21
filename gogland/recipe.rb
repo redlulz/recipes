@@ -2,14 +2,14 @@ class Gogland < FPM::Cookery::Recipe
   description   'Go IDE'
 
   name          'gogland'
-  buildid =     '171.3780.106'
-  version       "1.0-EAP-#{buildid}"
+  buildid =     '171.4694.35'
+  version       "2017.1-EAP-9-#{buildid}"
   revision      1
   section       'devel'
   vendor        'JetBrains'
   homepage      'https://www.jetbrains.com/go/'
   source        "https://download.jetbrains.com/go/gogland-#{buildid}.tar.gz"
-  sha256        'cbe84d07fdec6425d8ac63b0ecd5e04148299c1c0c6d05751523aaaa9360110b'
+  sha256        '539a19bb452835093c5692a1312c942500f161d444207b5907329128e2424e60'
 
   depends       'default-jre', 'golang'
 
@@ -24,7 +24,7 @@ class Gogland < FPM::Cookery::Recipe
 
   def install
     opt("#{name}").install Dir['*']
-    opt("#{name}/jre").rmtree
+    opt("#{name}/jre64").rmtree
 
     share('applications').install workdir('gogland.desktop')
 
