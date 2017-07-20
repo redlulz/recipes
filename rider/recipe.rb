@@ -2,13 +2,13 @@ class Rider < FPM::Cookery::Recipe
   description   'A cross-platform .NET IDE based on the IntelliJ platform and ReSharper'
 
   name          'rider'
-  buildid =     '171.4456.902'
-  version       "2017.1-EAP-24-#{buildid}"
+  buildid =     '171.4456.1432'
+  version       "2017.1-RC-#{buildid}"
   revision      1
   section       'devel'
   vendor        'JetBrains'
   homepage      'https://www.jetbrains.com/rider/'
-  source        "https://download.jetbrains.com/resharper/riderRS-#{buildid}.tar.gz"
+  source        "https://download.jetbrains.com/resharper/Rider-RC-#{buildid}.tar.gz"
 
   depends       'default-jre', 'mono-devel'
 

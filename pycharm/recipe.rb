@@ -2,13 +2,13 @@ class PyCharm < FPM::Cookery::Recipe
   description   'Python IDE for Professional Developers'
 
   name          'pycharm-professional'
-  version       '2017.1.4'
+  version       '2017.1.5'
   revision      1
   section       'devel'
   vendor        'JetBrains'
   homepage      'https://www.jetbrains.com/pycharm/'
   source        "https://download.jetbrains.com/python/#{name}-#{version}.tar.gz"
-  sha256        'bbae5602b9cf6d26ccce9e1bf8b388d79c27cf89673d1a56f248bf0a50e518ed'
+  sha256        '52519dfd0e913b5ccb8767155cd4d1fd413967d5010e8474cdc9a1fa688016ce'
 
   depends       'default-jre', 'python | python3'
 
