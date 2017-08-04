@@ -2,14 +2,14 @@ class Gogland < FPM::Cookery::Recipe
   description   'Go IDE'
 
   name          'gogland'
-  buildid =     '171.4694.35'
-  version       "2017.1-EAP-9-#{buildid}"
+  buildid =     '172.3757.2'
+  version       "2017.2-EAP-11-#{buildid}"
   revision      1
   section       'devel'
   vendor        'JetBrains'
   homepage      'https://www.jetbrains.com/go/'
   source        "https://download.jetbrains.com/go/gogland-#{buildid}.tar.gz"
-  sha256        '539a19bb452835093c5692a1312c942500f161d444207b5907329128e2424e60'
+  sha256        'f462771c6a21b94a0cf460d0506e93860bc59223108defcbbbfc8a9bf824e89f'
 
   depends       'default-jre', 'golang'
 
