@@ -1,12 +1,12 @@
 [Desktop Entry]
-Name=Gogland
-Icon=gogland
+Name=GoLand
+Icon=goland
 GenericName=Go IDE
 Comment=Go IDE
-Exec=/usr/bin/gogland %f
+Exec=/usr/bin/goland %f
 Terminal=false
 Type=Application
 Categories=Development;IDE;
 StartupNotify=true
-StartupWMClass=jetbrains-gogland
+StartupWMClass=jetbrains-goland
 
