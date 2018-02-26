@@ -2,13 +2,13 @@ class Rider < FPM::Cookery::Recipe
   description   'A cross-platform .NET IDE based on the IntelliJ platform and ReSharper'
 
   name          'rider'
-  version       '2017.2'
+  version       '2017.3.1'
   revision      1
   section       'devel'
   vendor        'JetBrains'
   homepage      'https://www.jetbrains.com/rider/'
   source        "https://download.jetbrains.com/resharper/JetBrains.Rider-#{version}.tar.gz"
-  sha256        '4a4e9c6c71f8fd08325cf145de3bec745baf8c40fd236e04f71b488528252850'
+  sha256        '7bc6b7700b55396fd10a46af83e14ef3336a71f7326947fd3502cd4a01603e4d'
 
   depends       'default-jre', 'mono-devel'
 

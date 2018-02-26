@@ -2,14 +2,13 @@ class GoLand < FPM::Cookery::Recipe
   description   'Go IDE'
 
   name          'goland'
-  buildid =     '173.3531.21'
-  version       "2017.3-EAP-18-#{buildid}"
+  version       "2017.3.2"
   revision      1
   section       'devel'
   vendor        'JetBrains'
   homepage      'https://www.jetbrains.com/go/'
-  source        "https://download.jetbrains.com/go/goland-#{buildid}.tar.gz"
-  sha256        '5738129cb5ab81428cf6fa0ec18e97221b1303d966e679e575a0ac8e669170cd'
+  source        "https://download.jetbrains.com/go/goland-#{version}.tar.gz"
+  sha256        '75bf38b71542976c5c5865847cff08298ec21584d9162db047c55f8a7b901b2e'
 
   depends       'default-jre', 'golang'
 
