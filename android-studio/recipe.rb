@@ -2,14 +2,14 @@ class Studio < FPM::Cookery::Recipe
   description   'The Official IDE for Android'
 
   name          'android-studio'
-  version       '3.0.0.18'
-  buildid =     '171.4408382'
+  version       '3.1.2'
+  buildid =     '173.4720617'
   revision      1
   section       'devel'
   vendor        'Google'
   homepage      'https://developer.android.com/studio/index.html'
   source        "https://dl.google.com/dl/android/studio/ide-zips/#{version}/android-studio-ide-#{buildid}-linux.zip"
-  sha256        '7991f95ea1b6c55645a3fc48f1534d4135501a07b9d92dd83672f936d9a9d7a2'
+  sha256        '13f290279790df570bb6592f72a979a495f7591960a378abea7876ece7252ec1'
 
   depends       'default-jdk'
 
